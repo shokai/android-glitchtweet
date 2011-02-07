@@ -4,6 +4,9 @@ var g = new GlitchText();
 $(function(){
     $('div#glitch').click(glitch);
     $('div#tweet').click(tweet).css('visibility', 'hidden');
+    $('textarea#source').live('click', function(e){
+        $('textarea#source').val('').die('click');
+    });
 });
 
 
