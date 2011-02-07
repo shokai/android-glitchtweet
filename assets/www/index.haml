@@ -2,20 +2,23 @@
 %html
   %head
     %title glitchtweet
+    %link{:rel => 'stylesheet', :href => 'fonts-3.1.1.css', :type => 'text/css'}
+    %link{:rel => 'stylesheet', :href => 'reset-3.1.1.css', :type => 'text/css'}
+    %link{:rel => 'stylesheet', :href => 'main.css', :type => 'text/css'}
     %script{:type => 'text/javascript', :src => "./phonegap.js"}
     %script{:type => 'text/javascript', :src => "./jquery.js"}
     %script{:type => 'text/javascript', :src => "./tiny_segmenter-0.1.js"}
     %script{:type => 'text/javascript', :src => "./glitchtext.js"}
     %script{:type => 'text/javascript', :src => "./main.js"}
   %body
-    %h1 glitchtweet
-    %div
-      %h2 source
-      %textarea{:id => 'source', :rows => 5, :cols => 100}
-    %div
-      %input{:id => 'glitch', :type => 'button', :value => 'glitch'}
-    %div
-      %h2 result
-      %div#result
-    %div
-      %input{:id => 'tweet', :type => 'button', :value => 'tweet'}
+    %div#content
+      %h1 glitchtweet
+      %div
+        %textarea{:id => 'source', :rows => 1, :cols => 40}
+          ここに書いたテキストがglitchされます
+      %div
+        %div.button#glitch glitch
+      %div
+        %div#result
+      %div
+        %div.button#tweet tweet

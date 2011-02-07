@@ -2,6 +2,9 @@
 <html>
   <head>
     <title>glitchtweet</title>
+    <link href='fonts-3.1.1.css' rel='stylesheet' type='text/css' />
+    <link href='reset-3.1.1.css' rel='stylesheet' type='text/css' />
+    <link href='main.css' rel='stylesheet' type='text/css' />
     <script src='./phonegap.js' type='text/javascript'></script>
     <script src='./jquery.js' type='text/javascript'></script>
     <script src='./tiny_segmenter-0.1.js' type='text/javascript'></script>
@@ -9,20 +12,20 @@
     <script src='./main.js' type='text/javascript'></script>
   </head>
   <body>
-    <h1>glitchtweet</h1>
-    <div>
-      <h2>source</h2>
-      <textarea cols='100' id='source' rows='5'></textarea>
-    </div>
-    <div>
-      <input id='glitch' type='button' value='glitch' />
-    </div>
-    <div>
-      <h2>result</h2>
-      <div id='result'></div>
-    </div>
-    <div>
-      <input id='tweet' type='button' value='tweet' />
+    <div id='content'>
+      <h1>glitchtweet</h1>
+      <div>
+        <textarea cols='40' id='source' rows='1'>ここに書いたテキストがglitchされます</textarea>
+      </div>
+      <div>
+        <div class='button' id='glitch'>glitch</div>
+      </div>
+      <div>
+        <div id='result'></div>
+      </div>
+      <div>
+        <div class='button' id='tweet'>tweet</div>
+      </div>
     </div>
   </body>
 </html>

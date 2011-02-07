@@ -1,0 +1,39 @@
+
+body {
+    margin : 0px;
+    padding : 0px;
+    text-align : center;
+    background : #DDD;
+    color : #000;
+}
+
+#content {
+    font-size : 20pt;
+    margin : 0px;
+    padding : 0px;
+    width : 100%;
+}
+
+h1 {
+    font-size : 35pt;
+}
+
+div.button {
+    font-size : 35pt;
+    width : 95%;
+    padding : 10px;
+    background : #444;
+    color : #FFF;
+    border-radius : 30px;
+    margin-top : 15px;
+    margin-bottom : 15px;
+    margin-left : 2px;
+    margin-right : 2px;
+}
+
+textarea {
+    width : 100%;
+    height : 150px;
+    margin : 0px;
+    padding : 0px;
+}
