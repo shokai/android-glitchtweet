@@ -1,0 +1,21 @@
+!!! XML
+%html
+  %head
+    %title glitchtweet
+    %script{:type => 'text/javascript', :src => "./phonegap.js"}
+    %script{:type => 'text/javascript', :src => "./jquery.js"}
+    %script{:type => 'text/javascript', :src => "./tiny_segmenter-0.1.js"}
+    %script{:type => 'text/javascript', :src => "./glitchtext.js"}
+    %script{:type => 'text/javascript', :src => "./main.js"}
+  %body
+    %h1 glitchtweet
+    %div
+      %h2 source
+      %textarea{:id => 'source', :rows => 5, :cols => 100}
+    %div
+      %input{:id => 'glitch', :type => 'button', :value => 'glitch'}
+    %div
+      %h2 result
+      %div#result
+    %div
+      %input{:id => 'tweet', :type => 'button', :value => 'tweet'}
