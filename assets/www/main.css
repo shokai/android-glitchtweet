@@ -37,3 +37,9 @@ textarea {
     margin : 0px;
     padding : 0px;
 }
+
+div#count {
+    text-align : right;
+    margin-right : 10px;
+    font-size : 18pt;
+}

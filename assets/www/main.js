@@ -18,7 +18,9 @@ var glitch = function(){
         result = g.random(result);
         if(Math.random() > 0.6) break;
     };
-    $('div#result').html(result);
+    if(result.length > 140) result = result.slice(0,140);
+    $('div#result').html($('<p>').html(result));
+    $('div#count').html($('<p>').html('['+result.length+']'));
     $('div#tweet').css('visibility','visible');
 };
 
