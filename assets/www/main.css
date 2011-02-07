@@ -15,18 +15,18 @@ body {
 }
 
 h1 {
-    font-size : 35pt;
+    font-size : 25pt;
 }
 
 div.button {
     font-size : 35pt;
-    width : 95%;
-    padding : 10px;
+    width : 97%;
+    padding : 3px;
     background : #444;
     color : #FFF;
     border-radius : 30px;
-    margin-top : 15px;
-    margin-bottom : 15px;
+    margin-top : 10px;
+    margin-bottom : 10px;
     margin-left : 2px;
     margin-right : 2px;
 }
