@@ -15,9 +15,9 @@ var glitch = function(){
     if(source.length < 1) return;
     result = source;
     while(true){
-        result = g.random(source);
-        if(Math.random() > 0.4) break;
-    }
+        result = g.random(result);
+        if(Math.random() > 0.6) break;
+    };
     $('div#result').html(result);
     $('div#tweet').css('visibility','visible');
 };
